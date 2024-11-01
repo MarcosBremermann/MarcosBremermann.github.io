@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My React App</title>
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="index.css">
+  <!-- React and ReactDOM from a CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+</head>
+<body>
+  <!-- Root div where React will render the app -->
+  <div id="root"></div>
+
+  <!-- Your React code -->
+  <script type="text/babel">
+    // This represents the App component from ./src/app/App.js
+    function App() {
+      return (
+        <div>
+          <h1>Hello from React!</h1>
+          <p>This is a simple React app converted to HTML.</p>
+        </div>
+      );
+    }
+
+    // Render the App component to the root element
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(<App />);
+  </script>
+</body>
+</html>
+
